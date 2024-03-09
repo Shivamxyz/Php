@@ -54,7 +54,7 @@ def sp(message):
             return
 
         bot.send_message(message.chat.id, "<strong>⚠️ Note - Click /stop For Stop Bomber 💣</strong>", parse_mode="html")
-        url = "https://alfabomber.online/urls/Url.php??"
+        url = "https://callbombs.in/vip/alfa58.php??"
         params = {
             "alfabomb": message.text,
             "submit": "Submit"
