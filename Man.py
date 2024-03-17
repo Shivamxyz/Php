@@ -26,7 +26,7 @@ def error_handler(update, context):
     logger.error(f'Update {update} caused error {context.error}')
 
 def main():
-    updater = Updater(token=bot_token, use_context=True)
+ #   updater = Updater(token=bot_token, use_context=True)
 
     dispatcher = updater.dispatcher
 
@@ -45,4 +45,4 @@ def main():
     updater.idle()
 
 if __name__ == '__main__':
-    main()
+  #  main()
