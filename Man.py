@@ -27,20 +27,20 @@ def error_handler(update, context):
     """Log any errors that occur."""
     logger.error(f'Update {update} caused error {context.error}')
 
-def main():
-   updater = Updater(token=bot_token, use_context=True)
+#def main():
+  # updater = Updater(token=bot_token, use_context=True)
 
-    dispatcher = updater.dispatcher
+ #   dispatcher = updater.dispatcher
 
     # Add command handlers
-    dispatcher.add_handler(CommandHandler("check", check_id))
-    dispatcher.add_handler(CommandHandler("menu", menu))
+   # dispatcher.add_handler(CommandHandler("check", check_id))
+#    dispatcher.add_handler(CommandHandler("menu", menu))
 
     # Log errors
-    dispatcher.add_error_handler(error_handler)
+#    dispatcher.add_error_handler(error_handler)
 
     # Start the Bot
-    updater.start_polling()
+#    updater.start_polling()
 
     # Run the bot until you press Ctrl-C or the process receives SIGINT,
     # SIGTERM or SIGABRT
