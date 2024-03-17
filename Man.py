@@ -1,5 +1,6 @@
 import logging
 import telegram
+from telegram import Updater
 from telegram.ext import Updater, CommandHandler, CallbackContext
 
 # Set up logging
