@@ -28,7 +28,7 @@ def error_handler(update, context):
 def main():
  #   updater = Updater(token=bot_token, use_context=True)
 
-    dispatcher = updater.dispatcher
+    dispatcher = Updater.dispatcher
 
     # Add command handlers
     dispatcher.add_handler(CommandHandler("check", check_id))
