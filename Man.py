@@ -1,4 +1,5 @@
 import logging
+import telegram
 from telegram.ext import Updater, CommandHandler, CallbackContext
 
 # Set up logging
@@ -26,7 +27,7 @@ def error_handler(update, context):
     logger.error(f'Update {update} caused error {context.error}')
 
 def main():
- #   updater = Updater(token=bot_token, use_context=True)
+   updater = Updater(token=bot_token, use_context=True)
 
     dispatcher = Updater.dispatcher
 
